@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+nav{
+    background-color:#2874f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 2px 1px 1px 0 rgb(0 0 0 / 16%);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    
+}
+
+.plus-color{
+    color: orange;
+}
+
+.logo p{
+    color: white;
+    font-size: small;
+    position: relative;
+    top: -5px;
+}
+
+.search{
+    background-color: white;
+    padding: 8px;
+    width: 500px;
+    margin: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #2874f0;
+    box-shadow: -7px -7px 10px rgb(0, 0, 0,0.1),
+    7px 7px 10px rgb(0, 0, 0,0.1);
+    border-radius: 2px;
+}
+
+.search:focus-within .recentsearch{
+    display: block;
+}
+
+
+.search input{
+    width: 400px ;
+    border: none;
+    outline: none;
+}
+
+.toplinksFlip{
+    margin: 0px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 490px;
+}
+
+.toplinks{
+    margin: 0px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 490px;
+}
+
+.fa-sharp{
+    font-size: 10px;
+
+}
+
+.toplinksFlip:hover #flipAngle{
+    transform: rotate(180deg);
+}
+
+ .toplinksMore:hover  #MoreAngleIcon{
+    transform: rotate(180deg);
+
+}
+.flipkartdropDown{
+    position: relative;
+    height: 1px;
+    
+}
+
+.flipkartdropDown_Content{
+    display: none;  
+    position: absolute;
+    margin-top: 20px;
+    padding: 10px;
+    width: 260px;
+    background-color:white;
+    border-radius: 3px;
+    box-shadow: -7px -7px 10px rgb(0, 0, 0,0.1),
+    7px 7px 10px rgb(0, 0, 0,0.1);
+}
+
+.flipkartdropDown_Options{
+    color: #2874f0;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #aeacac;
+}
+.toplinksFlip:hover .flipkartdropDown_Content{
+    display: block;
+}
+/* More drop down */
+
+.moreDropDown{
+    display: none;
+    position: absolute;
+    top: 59px;
+    right: 240px;
+    background-color:white;
+    color: #2874f0;
+    padding: 10px;
+    width: 220px;
+    border-radius: 2px;
+    box-shadow: -7px -7px 10px rgb(0, 0, 0,0.1),
+    7px 7px 10px rgb(0, 0, 0,0.1);
+}
+.toplinksMore:hover .moreDropDown{
+    display: block;
+}
+.toplinksMore{
+    margin: 0px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 490px;
+}
+
+.MoredropDown_Options{
+    padding: 13px;
+    font-size: medium;
+    display: flex;
+}
+
+
+
+/* catagory layer */
+
+.Catagory-layer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    padding-bottom: 4px;
+    margin-top: 60px;
+}
+
+.Catagory-layer:hover{
+    cursor: pointer;
+    
+}
+
+.Catagory-layer-img{
+    
+    height: 80px;
+
+}
+
+.Catagory-layer-text{
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.Catagory-layer-text:hover{
+    color: #2874f0;
+    cursor: pointer;
+}
+
+#Electronics{
+    padding-left: 1px;
+}
+
+#beauty{
+    padding-right: 10px;
+}
+
+.twowheelerlay{
+    margin-left: -30px;
+    padding-right: 50px;
+}
+
+#twoWheelertext{
+    padding-right: 10px;
+}
+
+/*recent search */
+
+.recentsearch{
+    display: none;
+    position: absolute;
+    top: 51px;
+    background-color: white;
+    width: 500px;
+    padding: 8px;
+    margin: -8px;
+    height: 300px;
+    box-shadow: -5px 5px 7px rgb(0,0,0,0.2),
+    5px 5px 10px rgb(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+.recentsearch_list{
+    font-size: 16px;
+    display: flex;
+    color: rgb(71, 69, 69);
+    border-bottom: 1px solid rgb(184, 176, 176);
+    padding-bottom: 7px;
+}
+.recentsearch_list p, .recentsearch_Discovermore p{
+    padding-left: 15px;
+    color: rgb(73, 66, 66);
+    margin-top: -2px;
+}
+
+.discoverMore{
+    margin: 10px 0px;
+    color:rgb(73, 66, 66) ;
+    font-size: 14px;
+}
+
+.recentsearch_Discovermore {
+    display: flex;
+    margin: 15px 3px;
+}
+.recentsearch_Discovermore i{
+    margin: -2px;
+    color: black;
+}
+
+/* third layer image slider*/
+
+
+.slider_img{
+    width:100%;
+    display: flex;
+    animation: 7s sliderimages infinite;
+
+}
+
+.slider_img img{
+    width: 100%;
+}
+
+.slider{
+    display: flex;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.btn-container{
+    margin: auto;
+}
+.btn{
+    padding: 35px 15px;
+    background-color: white;
+    font-size: 30px;
+    position: relative;
+    border-radius: 5px;
+}
+
+#btn_left{
+    position: relative;
+    margin-right: -50px;
+    z-index: 5;
+}
+
+#btn_right{
+    position: relative;
+    margin-left: -50px;
+}
+
+/* slider autoanimation*/
+
+/*
+
+@keyframes sliderimages {  
+    10%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+    
+
+}
+
+*/
+
+/* forth layer products */
+
+.Electronis{
+    background-color: rgb(212, 216, 221);
+    display: flex;
+    height: 310px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-shadow: -5px 5px 7px rgb(0,0,0,0.2),
+    5px 5px 10px rgb(0,0,0,0.2)
+}
+
+.Electronics_left{
+    width: 15%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Electronics_right{
+    background-color: rgb(255, 255, 255);
+    width: 85%;
+    cursor: pointer;
+}
+.electroleft_img{
+    width: 100%;
+}
+.Electronics_left h1{
+    padding: 20px;
+    
+}
+.electro_left_btn{
+    margin-top: 40px;
+    margin-left: 70px;
+    background-color: #2874f0;
+    color: white;
+    width: 95px;
+    height: 38px;
+    box-shadow: 5px 5px 7px  rgb(0,0,0,0.1);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+.ElectronicProContents{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.electext1{
+    padding: 4px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.electext2{
+    padding: 4px;
+    text-align: center;
+    color: #388e3c;
+}
+
+.electext3{
+    padding: 4px;
+    text-align: center;
+    opacity: .6;
+}
+
+.EleImg{
+    width: 95%;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.EleImg:hover{
+    padding: 10px;
+
+}
+
+/* Beauty food Toy */
+
+.Beauty_Toy{
+    background-color: rgb(212, 216, 221);
+    display: flex;
+    height: 310px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-shadow: -5px 5px 7px rgb(0,0,0,0.2),
+    5px 5px 10px rgb(0,0,0,0.2)
+}
+
+.Beauty_Toy h2{
+    padding: 30px;
+    font-weight: bolder;
+    font-size: 1.6em;
+    
+}
+
+ /* Footer */
+
+ .footer{
+    background-color: #212121;
+    height: 350px;
+ }
+
+ .footerTop{
+    display: flex;
+    justify-content: space-between;
+ }
+ .footerTopTop{
+    height: 40px;
+    width: 100%;
+ }
+
+ .footerTop_left{
+    padding: 10px;
+    padding-top: 0px;
+    width: 65%;
+    display: flex;
+    justify-content:space-around;
+    color: white;
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 500px;
+ }
+
+ .footerTop h5{
+    color: #878787;
+    font-size: 16px;
+    font-weight: 100px;
+
+ }
+
+ .footerTop_right{
+    padding: 10px;
+    padding-top: 14px;
+    display: flex;
+    justify-content:space-around;
+    color: white;
+    line-height: 2;
+    font-size: 12px;
+    width: 35%;
+    border-left: 1px solid #878787;
+ }
+
+ .footerTop_left_text{
+    margin: 20px;
+ }
+
+.BottomFooter{
+    background-color:#212121 ;
+}
+ .footerbottomContent{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 40px;
+    border-top: 1px solid #878787;
+    padding: 15px;
+ }
+
+ .footerpaymentImg{
+    width: 370px;
+    height: 18px;
+ }
+
+ .footerbottomContent i{
+    color: white;
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+ 
